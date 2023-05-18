@@ -1,0 +1,343 @@
+/* znaczniki nadrzędne */
+
+body
+{
+    background-color: #000000;
+    font-family: Calibri;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+    overflow: auto;
+}	
+	
+html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/* kolorystyka linków w związku ze stanem */
+
+a:link
+{
+  color: #1132ED;
+}
+
+a:visited
+{
+  color: #19D643;
+}
+
+a:hover
+{
+  color: #D6041D;
+}
+
+a:active
+{
+  color: #FABF05;
+}
+
+/* znaczniki blokowe */
+
+header 
+{
+	background-color: #000000;
+    height: auto;
+}
+
+nav 
+{
+	background-color: #FABF05;
+    text-align: center;
+    padding: 10px;
+    height: 7%;
+    border-bottom: 2px solid #000000;
+}
+
+div.container 
+{
+    position: relative;
+	background-color: #FC8C72;
+    float: left;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}
+
+article
+{
+    position: relative;
+	background-color: #000000;
+    margin: 2% 2% 0 2%;
+    padding: 2%;
+}
+
+div.container article:first-child
+{
+    margin-top: 5%;
+}
+
+aside
+{
+    position: relative;
+	background-color: #FABF05;
+    float: left;
+    height: 100%;
+    width: 10%;
+}
+
+footer
+{
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border-top: 2px solid #000000;
+}
+
+/* odsyłacze */
+
+header a 
+{
+    text-decoration: none;
+}
+
+p.aside a, p.aside q
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+a.button
+{
+    color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 4px 2px;
+	padding: 15px 32px;
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid #D6041D;
+	background-color: #000000;
+	display: inline-block;
+	cursor: pointer;
+	}
+
+a.button:hover, a.menu:hover
+{
+    color: #19D643;
+}
+
+a.menu
+{
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a.email:hover, span:hover, dfn:hover
+{
+    color: #FF0000;
+}
+
+a.email
+{
+    color: #19D643;
+}
+
+a[id]
+{
+    color: #008FE8;
+}
+
+/* przyciski */
+
+button 
+{
+	background-color: #000000;
+	border: 2px solid #D6041D;
+}
+
+/* formatowanie tekstu */
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #19D643;
+}
+
+a > h1
+{
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+	-webkit-text-stroke: 1px #19D643;
+	cursor: pointer;
+}
+
+p, li
+{
+	font-size: 16px;
+    color: #008FE8;
+}
+
+footer p 
+{
+	color: #FFFFFF;
+}
+
+p.t-aside
+{
+    margin-left: 10px;
+    color: #000000;
+    font-weight: 700;
+}
+
+p.aside
+{
+    margin-right: 10px;
+}
+
+article > h2
+{
+    text-decoration: underline wavy;
+}
+
+em
+{
+    color: #19D643;
+}
+
+dfn
+{
+    font-style: normal;
+}
+
+/* fotografie */
+
+article li img
+{
+    margin: 15px 0 15px 0;
+    height: 35%;
+    width: 35%;
+    border: 2px solid #D6041D;
+}
+
+img.yt 
+{
+    height: 12.5%;
+    width: 12.5%;
+}
+
+.img
+{
+    width: 25%;
+    height: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: #FFFFFF;
+	cursor: pointer;
+}
+
+td img
+{
+    width: 100%;
+}
+
+/* ramki iframe */
+
+iframe
+{
+    width: 640px;
+    height: 360px;
+    border: 0;
+}
+
+/* listy */
+
+article li
+{
+    line-height: 1.5;
+}
+
+/* tabele */
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+}
+
+thead
+{
+	color: #FAC725;
+	text-align: center;
+}
+
+tbody
+{
+	color: #008FE8;
+}
+
+td, th
+{
+	padding: 5px 10px 5px 10px;
+}
+
+tfoot
+{
+	color: 	#0080FF;
+	text-align: center;
+}
+
+table, td, th
+{
+    border: 1px solid #19D643;
+    border-collapse: collapse;
+}
+
+/* formularze */
+
+legend
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #FABF05;
+    background-color: #000;
+    border: 0.5px solid #fff;
+	margin-left: 10px;
+	margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+	word-break: inherit;
+}
+
+fieldset
+{
+    background-color: #909090;
+}
+
+label
+{
+	color: #1132ED;
+	font-size: 16px;
+	word-break: inherit;
+}
+
+/* klasy specjalne */
+
+.clear
+{
+    height: 5%;
+}
