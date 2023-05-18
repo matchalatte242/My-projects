@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta name="title" content="Podstawy hakingu">
+	<meta name="author" content="Piotr K.">
+	<meta name="copyright" content="Piotr K.">
+	<meta name="company" content="Technikum Nr 6 w Częstochowie">
+	<meta name="description" content="Na tej stronie dowiesz się trochę o hakingu i pojęciach z nim związanych. Strona nie ma na celu propagowania hakerstwa i wykorzystywania go do celów niezgodnych z prawem, a raczej uświadomienie przyszłych informatyków o zagrożeniach na nich czyhających w tym rozległym cyberświecie - jakim jest Internet.">
+	<meta name="keywords" content="podstawy, hakingu, haking, hacking, haker, hacker, cracker, ataki, sieciowe, anonymous, lulzsec, haktywizm, haktywiści, lizard, globalhell, pla, unit, level, seven, teamp0ison, chaos, computer, shadowcrew, dns, spoofing, phishing, wi-fi, cracking, wpa2, xss, ddos, sql, injection, ctf">
+	<meta name="creation-date" content="28-11-2020">
+	<meta name="last-modified" content="28-11-2020">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="300">
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="../icons/hacker.ico">
+	<link rel="stylesheet" href="../styles/stylesheet.css">
+	<script type="text/javascript" src="../scripts/mobiledetect.js"></script>
+	<title>Podstawy hakingu</title>
+</head>
+
+<body style="background-image: url(../images/b_background.jpg)" link="#FFFFFF" alink="#FF0000" vlink="#00FF00">
+	
+	<header class="logo" align="center">
+		<h3 class="logo1 blink">Podstawy hakingu</h3>
+	</header>
+	
+	<nav class="nav" align="center" style="background-image: url(../images/green_square.png)">
+		<a class="button" href="../index.html">WSTĘP</a>  <a class="button" href="ataki.html">ATAKI</a>  <a class="button" href="organizacje.html">ORGANIZACJE</a> <a class="button" href="systemy.html">SYSTEMY</a> <a class="button" href="https://ctflearn.com/" target="_blank">CTF</a> <a class="button" href="kontakt.html">KONTAKT</a> 
+	</nav>
+	
+	<div class="asideright">
+		<br>
+		<div id="menu2">
+			<ul type="square">
+				<a class="menu" href="#dnsspoofing"><li class="menu">DNS SPOOFING</li></a>
+				<a class="menu" href="#phishing"><li class="menu">PHISHING</li></a>
+				<a class="menu" href="#wificracking"><li class="menu">WI-FI CRACKING</li></a>
+				<a class="menu" href="#atakxss"><li class="menu">ATAK XSS</li></a>
+				<a class="menu" href="#atakddos"><li class="menu">ATAK DDOS</li></a>
+				<a class="menu" href="#sqlinjection"><li class="menu">SQL INJECTION</li></a>
+				<a class="menu" href="#bruteforce"><li class="menu">BRUTE-FORCE</li></a>
+				<a class="menu" href="#sessionhijacking"><li class="menu">SESSION HIJACKING</li></a>
+			</ul>
+		</div>
+		<br>
+	</div>
+	
+	<div class="asideleft">
+			<br>
+			<details>
+			<summary>Ukryj/pokaż shoutbox.</summary><br>
+			<div id="shoutbox_outer_713031643" style="width: 220px; height: 450px; overflow: hidden; margin: auto; padding: 0; border:0; ">
+				<iframe id="shoutbox_frame_713031643" src="https://www.shoutboxy.pl/shoutbox/sb.php?key=713031643" scrolling="no" frameborder="0" width="220px" height="450px" style="border:0; margin:0; padding: 0;">
+				</iframe>
+			</div>
+			</details>
+			<br>
+			<hr>
+			<br>
+		</div>
+	
+	<div class="container">
+		
+		<table align="center" rules="all">
+		
+			<thead>
+				<tr>
+					<th>L.p.</th>
+					<th>Nazwa ataku</th>
+					<th>Wyjaśnienie</th>
+					<th>Fotografia</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>1.</th>
+					<th>DNS spoofing</th>
+					<td>Technika phishingu polegająca na tym, że haker wysyła do serwera DNS fałszywą informację, która powoduje, że po wpisaniu nazwy domeny wyświetla się strona znajdująca się na serwerze o adresie IP podanym przez atakującego.</td>
+					<td><a id="dnsspoofing" href="https://pl.wikipedia.org/wiki/Zatruwanie_DNS" target="_blank"><img src="../images/dnsspoofing.png" alt="Fotografia przedstawia ideę zatruwania DNS." title="Zatruwanie DNS" width="100%"></a></td>
+				</tr>
+				
+				<tr>
+					<th>2.</th>
+					<th>Phishing</th>
+					<td>Haker podszywa się pod jedną ze stron w Internecie - np. bank - w celu zdobycia danych niezbędnych do logowania.</td>
+					<td><a id="phishing" href="https://pl.wikipedia.org/wiki/Phishing" target="_blank"><img src="../images/phishing.png" alt="Fotografia przedstawia przykład phishingu." title="Phishing" width="100%"></a></td>
+				</tr>
+				
+				<tr>
+					<th>3.</th>
+					<th>Wi-Fi cracking</th>
+					<td>Jest to atak polegający na uzyskaniu nieautoryzowanego dostępu do sieci bezprzewodowej o danym SSID.</td>
+					<td><a id="wificracking" href="https://haker.edu.pl/2016/02/20/jak-zlamac-haslo-wifi/" target="_blank"><img src="../images/wificracking.png" alt="Przykład Wi-Fi crackingu." title="Wi-Fi cracking" width="100%"></a></td>
+				</tr>
+				
+				<tr>
+					<th>4.</th>
+					<th>Atak XSS</th>
+					<td>Większość tych ataków wykorzystuje złośliwe skrypty napisane w języku JavaScript, które atakujący zamieszczają w linkach na stronie. Skrypty uruchamiane po kliknięciu użytkownika są w stanie przejąć sesję, zmienić reklamy wyświetlane na stronie, a także uzyskać dostęp do konta.</td>
+					<td><a id="atakxss" href="https://pl.wikipedia.org/wiki/Cross-site_scripting" target="_blank"><img src="../images/xss.jpg" alt="Fotografia przedstawia ideę ataku XSS." title="Cross Site Scripting" width="100%"></a></td>	
+				</tr>
+				
+				<tr>
+					<th>5.</th>
+					<th>Atak DDoS</th>
+					<td>Polega na wykorzystaniu przez atakującego licznych botów - w tym komputerów zainfekowanych złośliwym oprogramowaniem, które wysyłają do serwera wiele powtarzających się zapytań. Z czasem tych zapytań staje się tak dużo, że serwer zwyczajnie nie potrafi ich przetworzyć, w skutek czego następuje scrashowanie serwera.</td>
+					<td><a id="atakddos" href="https://pl.wikipedia.org/wiki/DDoS" target="_blank"><img src="../images/ddos.png" alt="Fotografia przedstawia wizualizację ataku DDoS." title="Rozproszona odmowa usługi" width="100%"></a></td>	
+				</tr>
+				
+				<tr>
+					<th>6.</th>
+					<th>SQL injection</th>
+					<td>Polega na "wstrzyknięciu" kodu SQL na stronę tak, aby został on uruchomiony. Może być on umieszczony np. w polu formularza.</td>
+					<td><a id="sqlinjection" href="https://pl.wikipedia.org/wiki/SQL_injection" target="_blank"><img src="../images/sqli.ppm" alt="Fotografia przedstawia ideę wstrzykiwania SQL-a." title="Wstrzykiwanie strukturalnego języka zapytań do baz danych" width="100%"></a></td>	
+				</tr>
+				
+				<tr>
+					<th>7.</th>
+					<th>Brute-Force</th>
+					<td>Polega na generowaniu nieskończonej ilości potencjalnych haseł i loginów, aby natrafić na właściwą kombinację.</td>
+					<td><a id="bruteforce" href="https://pl.wikipedia.org/wiki/Atak_brute_force" target="_blank"><img src="../images/bruteforce.jpg" alt="Fotografia przedstawia przykładowy atak Brute-Force." title="Atak Brute-Force" width="100%"></a></td>	
+				</tr>
+				
+				<tr>
+					<th>8.</th>
+					<th>Session hijacking</th>
+					<td>Włamywacz próbuje uzyskać dostęp do istniejącej sesji użytkownika. W ten sposób zyskuje nieuprawniony dostęp do konta legalnego użytkownika istniejącego w systemie komputerowym.</td>
+					<td><a id="sessionhijacking" href="https://pl.wikipedia.org/wiki/Session_hijacking" target="_blank"><img src="../images/sessionhijacking.png" alt="Fotografia przedstawia ideę ataku polegającego na przechwytywaniu sesji istniejącego użytkownika." title="Session hijacking" width="100%"></a></td>	
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<th colspan="4">Informacje pochodzą z serwisów:<br>
+					<a href="https://smartbees.pl/" target="_blank">smartbees.pl</a><br>
+					<a href="https://pl.wikipedia.org/" target="_blank">pl.wikipedia.org</a>
+				</th>
+			</tfoot>
+			
+		</table>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer class="footer" align="center">
+			<p class="footer2">&#169; 2020 BY PIOTR K. &sdot; WEB PAGE &sdot; PODSTAWY HAKINGU &sdot; ALL RIGHTS RESERVED &sdot;</p>
+			<p class="look">Skontaktuj się ze mną: <a href="mailto:poczta@poczta.pl" class="email" target="_blank">poczta@poczta.pl</a></p>
+			<p class="look">Zobacz bibliografię: <a class="look" href="../bibliography/bibliography.html" target="_blank">kliknij tutaj!</a></p>
+			<br>
+		</footer>
+	</div>
+
+</body>
+
+</html>
