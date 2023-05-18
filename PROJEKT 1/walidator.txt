@@ -1,1 +1,0 @@
-W celu przeprowadzenia walidacji niniejszej strony pod względem poprawnie wykorzystanej technologii HTML i CSS skorzystałem z W3C Markup Validation Service (https://validator.w3.org/) oraz W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/).
